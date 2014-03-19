@@ -1,0 +1,61 @@
+
+//styleguide grid 
+
+.grid10 {float: left; width: 10%; margin: 0 20px 10px 0;}
+.grid20 {float: left; width: 20%; margin: 0 20px 10px 0;}
+.grid40 {float: left; width: 30%; margin: 0 20px 10px 0;}
+.grid50 {float: left; width: 40%; margin: 0 20px 10px 0;}
+.grid60 {float: left; width: 50%; margin: 0 20px 10px 0;}
+.grid70 {float: left; width: 60%; margin: 0 20px 10px 0;}
+.grid80 {float: left; width: 70%; margin: 0 20px 10px 0;}
+.grid90 {float: left; width: 80%; margin: 0 20px 10px 0;}
+.grid100 {width: 100%;}
+
+
+body {background: #fff;
+    &.styleguide {
+        header {
+            &.styleguide {
+                .grid20 {margin-bottom: 0;}
+                .logo {display: block; width:140px; height: 117px; text-indent: -9999em; background: url(../images/logo.gif) no-repeat 0 0;}
+            }
+        }
+        h2 {
+            &.styleguide {padding: 20px 10px; color: #fff; background: #000;
+                &:first-child {margin-top: 0;}
+            }
+        }
+        .module {padding: 20px;}
+        xmp {white-space: normal;}
+        .syntaxhighlighter {padding: 20px; margin: 0;}
+        hr {border-top: solid 1px #000;}
+
+        nav {
+            &.styleguide {position: fixed; top: 10px; right: 10px; margin: 0; padding: 20px; border: solid 1px #000; background: #fff; z-index: 10;
+                @include box-shadow( 0px 0px 25px 5px rgba(0,0,0, 0.9));
+                ul {
+                    li {
+                        a {color: #000;
+                            &:hover {color: #fff; background: #666;}
+                        }
+                    }
+                }
+
+            }
+        }
+        .showcode {display: block;
+            .button {margin-top: 5px; float: none;}
+        }
+        .warning {padding: 10px; font-weight: bold; font-size: 2em; color: #fff; background: red;}
+        .className {display: block; text-align: center; font-size: 0.91em;}
+        //sections
+        
+        section#icon {
+            .icon-small,.icon-custom,.icon-med {float: none; margin: 0 auto;}
+            .grid10 {height: 80px;
+                .gutter10 {margin: auto;}
+            }
+        }
+    }
+    
+}
