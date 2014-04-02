@@ -5,7 +5,14 @@
 @import "compass/utilities/general/clearfix";
 @import "rgbapng";
 
+// Plugins - SyntexHighlighter plugin
 @import "partials/plugin/syntexHighlighter/shCore";
 @import "partials/plugin/syntexHighlighter/shThemeMidnight";
-@import "partials/pages/styleguide";
 
+//partials
+@import "partials/customClearFix";
+@import "partials/common";
+
+
+//page styles
+@import "partials/pages/styleguide";
