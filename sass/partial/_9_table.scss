@@ -1,0 +1,22 @@
+table {font-family: arial, sans-serif;
+    &.ui-jqgrid-htable {
+        th {
+            &.ui-state-default {border: solid 1px #ece6de;
+                @include background-image(linear-gradient(top, color_stops(#F8F7F7, #FDFDF8 5%, #ffffff 8%, #B7AD9A 95%, #A89E89 98%, #BEB7AC)));
+                .ui-jqgrid-sortable {
+                    .s-ico {position: absolute; top: 2px; right: 15px;}
+                }
+                .ui-icon {background-image: url(../preimages/ui/ui-icons_888888_256x240.png);}
+            }
+            &:hover {@include background-image(linear-gradient(top, color_stops(#ededed, #FDFDF8 5%, #efefe9 8%, #aca390 95%, #a19886 98%, #aca59a)));}
+        }
+        .ui-jqgrid-resize {background: url(../preimages/grid/grid-drag.png) no-repeat 100% 0;}
+    }
+    
+}
+
+//jqgrid
+.ui-jqgrid-hbox {padding: 0; @include background-image(linear-gradient(top, color_stops(#F8F7F7, #FDFDF8 5%, #ffffff 8%, #B7AD9A 95%, #A89E89 98%, #BEB7AC)));}
+.jqgridWrapper {
+    .gridmessage {display: none; position: absolute; top: 80px; left: 10px;}
+}

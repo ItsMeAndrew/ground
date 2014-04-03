@@ -1,0 +1,106 @@
+/* sprites - arrows */
+@import "arrows/*.png";
+/* $arrows-layout:diagonal;*/
+$arrows-spacing:100px;
+@include all-arrows-sprites;
+
+/* sprites - icons */
+$icons-spacing:300px;
+
+/* $icons-layout: diagonal;*/
+@import "icons/*.png";
+@include all-icons-sprites;
+
+/* logos */
+@import "logos/*.png";
+@include all-logos-sprites;
+
+
+.icon-small {@include icon-button(20px, 20px);
+    /* arrows */
+
+    &.arrow-up-brown {@include arrows-sprite("up-brown");}
+    &.arrow-down-brown {@include arrows-sprite("down-brown");}
+    
+    &.arrow-up-blue-01 {@include arrows-sprite("up-blue-01");
+        &.disabled {@include arrows-sprite("up-blue-02");
+            &:hover {@include arrows-sprite("up-blue-02");}
+        }
+        &:hover {@include arrows-sprite("up-blue-03");}
+    }
+    &.arrow-right-blue-01 {@include arrows-sprite("right-blue-01");
+        &.disabled {@include arrows-sprite("right-blue-02");
+            &:hover {@include arrows-sprite("right-blue-02");}
+        }
+        &:hover {@include arrows-sprite("right-blue-03");}
+    }
+    &.arrow-down-blue-01 {@include arrows-sprite("down-blue-01");
+        &.disabled {@include arrows-sprite("down-blue-02");
+            &:hover {@include arrows-sprite("down-blue-02");}
+        }
+        &:hover {@include arrows-sprite("down-blue-03");}
+    }
+    &.arrow-left-blue-01 {@include arrows-sprite("left-blue-01");
+        &.disabled {@include arrows-sprite("left-blue-02");
+            &:hover {@include arrows-sprite("left-blue-02");}
+        }
+        &:hover {@include arrows-sprite("left-blue-03");}
+    }
+
+    &.arrow-up-blue-02 {@include arrows-sprite("up-blue-02");}
+    &.arrow-right-blue-02 {@include arrows-sprite("right-blue-02");}
+    &.arrow-down-blue-02 {@include arrows-sprite("down-blue-02");}    
+    &.arrow-left-blue-02 {@include arrows-sprite("left-blue-02");}
+    
+    &.arrow-up-blue-03 {@include arrows-sprite("up-blue-03");}
+    &.arrow-right-blue-03 {@include arrows-sprite("right-blue-03");}
+    &.arrow-down-blue-03 {@include arrows-sprite("down-blue-03");}    
+    &.arrow-left-blue-03 {@include arrows-sprite("left-blue-03");}
+    
+    &.arrow-down-black {@include arrows-sprite("down-black");}
+    &.arrow-left-black {@include arrows-sprite("left-black");}
+
+    /* icons */
+    &.icon-setting-black {@include icons-sprite("setting-black");}
+    &.icon-tool-blue {@include icons-sprite("tool-blue");}
+    &.icon-cross-black-01 {@include icons-sprite("cross-black-01");}
+    &.icon-cross-red-01 {@include icons-sprite("cross-red-01");}
+    &.icon-cross-red-02 {@include icons-sprite("cross-red-02");}
+    &.icon-cross-brown-01 {@include icons-sprite("cross-brown-01");}
+    &.icon-question-01 {@include icons-sprite("question-01");}
+    
+    
+    
+}
+
+.icon-med {@include icon-button(25px, 25px);}
+.icon-pdf-med-01 {@include icons-sprite("pdf-med-01");}
+.icon-xls-med-01 {@include icons-sprite("xls-med-01");}
+.icon-mail-med-01 {@include icons-sprite("mail-med-01");}
+
+
+.icon-custom {}
+.arrow-up-brown-02 {@include icon-button(44px, 14px); @include arrows-sprite("up-brown-02");}
+.arrow-right-brown-02 {@include icon-button(13px, 44px); @include arrows-sprite("right-brown-02");}
+.arrow-down-brown-02 {@include icon-button(44px, 14px); @include arrows-sprite("down-brown-02");}
+.arrow-left-brown-02 {@include icon-button(13px, 44px); @include arrows-sprite("left-brown-02");}
+
+.icon-broadcast-01 {@include icon-button(30px, 19px); @include icons-sprite("broadcast-01");}
+.broadCast-01 {@include icons-sprite("broadcast-01");}
+.icon-message-01 {@include icon-button(25px, 16px); @include icons-sprite("message-01");}
+.message-01 {@include icons-sprite("message-01");}
+
+.icon-animate {
+    &.icon-refresh {display: block; float: left; width: 20px; height: 20px; text-indent: -9999em; background: url(../preimages/icons/refreshAni.gif) no-repeat 0 0;}
+}
+
+.logo {
+    &.ota-small {@include icon-button (90px,25px); @include logos-sprite("ota-small");}
+}
+
+.icon-driver {@include icon-button(29px, 21px);}
+.driver-unknown {@include icons-sprite("person-unknown");}
+.driver-driving {@include icons-sprite("person-driving");}
+.driver-working-notdriving {@include icons-sprite("person-workingNotDriving");}
+.driver-resting {@include icons-sprite("person-resting");}
+.driver-finished-work {@include icons-sprite("person-finishedWork");}

@@ -1,0 +1,67 @@
+fieldset {
+    div.field {padding-bottom: 2px;
+        label {float: left; @include inline-block; font-size: 1em;}
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {float: left; width: 180px; padding: 2px; font-size: 1em; border: solid 1px #ABADB3; @include inline-block;
+            &:hover, &:focus {border-color: #797b81;}
+            
+        }
+        select {float: left; width: 184px; @include inline-block; font-size: 1em;}
+        button {font-size: 1em;}
+        input[type="checkbox"] {border: solid 1px #ABADB3; font-size: 1em;}
+        textarea {width: 178px; border: solid 1px #ABADB3; font-size: 1em;}
+        &.inlinegroup {}
+        &.inline {display: inline-block; vertical-align: top;}
+        &.large {}
+        &.small {
+            input[type="text"],
+            input[type="password"],
+            input[type="email"] {width: 100px;}
+            select {width: 104px;}
+            textarea {width: 98px;}
+        }
+        &.tiny {
+            input[type="text"],
+            input[type="password"],
+            input[type="email"] {width: 40px;}
+        }
+        .datePicker {
+            &.navType {
+                a.prev {margin: 0 2px 0 0;}
+                a.next {margin: 0 0 0 2px;}
+                .dateRange {float: left; margin: 3px 0 0 0; min-width: 130px; max-width: 140px; text-align: center;}
+                .calanderTrigger {float: left; margin: 2px;}
+                .ui-datepicker-trigger {margin: 1px 0 0 5px;}
+            }
+            &.textType {
+                label {display: block; float: left; width: 40px;}
+                input {display: block; float: left;}
+                .ui-datepicker-trigger {display: block; float: left; width: 16px; margin: 2px 0 0 5px;}
+            }
+        }
+        
+         //datePicker
+        
+    }
+	
+
+    &.type01 {
+        label {@include inline-block; width: 150px;}
+    }
+    &.type02 {
+        div.field {
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            select,
+            textarea {padding: 1px 1px 1px 3px; border: solid 1px #ccc; background: #e4e0d7; 
+                @include border-radius(3px);
+            }
+            input[type="text"],
+            input[type="password"],
+            input[type="email"] {width: 150px;}
+        }
+    }
+}
+

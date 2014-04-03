@@ -1,0 +1,14 @@
+dl {
+  dt {display: block; float: left; width: 155px; font-weight: bold;}
+  dd {display: block; float: left; width: 120px;}
+    &.type01 {
+        dt {text-align: left; padding-right: 10px;}
+        dd {text-align: right; width: 120px; padding-right: 10px;}
+    }
+    &.type02 {margin-bottom: 5px;
+        dt {}
+        dd {width: 250px;
+            .subText {display: block; font-size: 0.91em; color: $grey-color;}
+        }
+    }
+}

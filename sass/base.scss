@@ -5,14 +5,61 @@
 @import "compass/utilities/general/clearfix";
 @import "rgbapng";
 
+// Variables and Mixins
+@import "partial/variables";
+@import "partial/mixins";
+
+//custom clearfix 
+/*@import "partial/clearfix";*/
+@import "partial/customClearFix";
+
 // Plugins - SyntexHighlighter plugin
-@import "partials/plugin/syntexHighlighter/shCore";
-@import "partials/plugin/syntexHighlighter/shThemeMidnight";
+@import "plugin/syntexHighlighter/shCore";
+@import "plugin/syntexHighlighter/shThemeMidnight";
 
-//partials
-@import "partials/customClearFix";
-@import "partials/common";
+//custom tools
+@import "partial/tools";
 
 
-//page styles
-@import "partials/pages/styleguide";
+// ================================================== //
+// Modules
+// ================================================== //
+
+@import "partial/1_typography";
+@import "partial/2_navigation";
+@import "partial/3_panel";
+@import "partial/4_popup";
+@import "partial/5_form";
+@import "partial/6_button";
+@import "partial/7_icon";
+@import "partial/8_list";
+@import "partial/9_table";
+@import "partial/10_other";
+
+
+// ================================================== //
+// Pages
+// ================================================== //
+
+// pages
+@import "page/common";
+
+// ie hack
+@import "partial/ie";
+
+
+
+
+
+
+
+
+
+// Table of Content
+// ================================================== //
+
+
+
+
+
+

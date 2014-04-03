@@ -1,0 +1,33 @@
+//tools
+
+//gutter
+.gutter1 {padding: 1px;}
+.gutter2 {padding: 2px;}
+.gutter5 {padding: 5px;}
+.gutter10 {padding: 10px;}
+.gutter15 {padding: 15px;}
+.gutter20 {padding: 20px;}
+.gutter30 {padding: 30px;}
+.gutter40 {padding: 40px;}
+
+//columns
+
+.colWrapper {
+    &.twoColums {
+        .column {width: 49%; float: left;
+            &:last-child {float:right;}
+        }
+    }
+}
+
+//floats
+.floatBottom {margin-bottom: 0px !important; padding-bottom: 0 !important;}
+.floatTop {margin-top: 0px !important; padding-top: 0 !important;}
+.floatRight {float: right !important;}
+.floatLeft {float: left !important;}
+
+//Custom
+.supportOnly {border-left: orange solid 3px !important; padding-left: 2px;}
+
+//tools
+.hide, .hidden {display: none !important;}

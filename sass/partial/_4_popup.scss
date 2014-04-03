@@ -1,0 +1,48 @@
+.jqmOverlay {background: #000;}
+.popup {display: none; position: fixed; top: 10%; left: 40%; background: #fff;}
+
+//eroad Modal Window
+.eroadModalWindow {display: none; position: absolute; padding: 3px 3px 5px 3px; top: 17%; left: 50%; border: solid 1px #BEB7AC; background: #fff;
+    @include border-radius(4px);
+    header, .header, .jqmdTC, .jqDrag {margin: 0; padding: 5px 5px;
+        @include background-image(linear-gradient(top, color_stops(#E7E0D4, #D4C8B4)));
+        h4 {font-size: 1.21em; font-weight: normal;}
+        .ui-jqdialog-titlebar-close{position: absolute; right: 13px; top: 8px;}
+    }
+    .tractor {margin: 5px 10px;
+        h3 {margin: 5px 0 0 3px; float: left; @include inline-block;}
+    }
+    .modalButtons {text-align: right;
+        input, a, button {float: none; @include inline-block;}
+        .icon-question-01 {margin-bottom: 5px;}
+    }
+    
+    //modals
+    &#updateVhubo  {width: 500px;
+                .tractor {
+                    
+                }
+    }
+    &#sendMessageModal {
+        header {margin-bottom: 4px;}
+        #configWrapper {
+            fieldset {
+                .field {
+                    &.select {padding: 5px 0 0 0;
+                        h3 {float: left; @include inline-block;}
+                    }
+                }
+            }
+            .modalButtons {margin-top: 5px;}
+            #vehicelMessageSendbuttons {margin-top: 3px;}
+        }
+                
+    }
+    &#setautoRUCmodal {width: 500px;}
+}
+.slideOut {
+    &.type01 {padding: 10px; border: #747981 2px solid; background-color:#C1C2F0;
+        @include background-image(linear-gradient(top, color_stops(#F0F0FF, #A3A4EA 35%, #A0A1E9 50%, #A0A1E9)));
+        @include border-radius(10px 0 0 10px);
+    }
+}

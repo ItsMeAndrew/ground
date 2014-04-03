@@ -1,0 +1,72 @@
+header:after,
+fieldset .field:after,
+.container:after,
+nav ul:after,
+.list li:after,
+dl:after,
+.row:after,
+.panel:after,
+.grid100:after,
+.page:after,
+.panel:after,
+.module:after,
+.clearfix:after,
+{ content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+
+
+header:before,
+header:after,
+fieldset .field:before,
+fieldset .field:after,
+.container:before,
+.container:after,
+nav ul:before,
+nav ul:after,
+.list li:before,
+.list li:after,
+dl:before,
+dl:after,
+.row:before,
+.row:after,
+.grid100:before,
+.grid100:after,
+page:before,
+page:after,
+.panel:before,
+.panel:after,
+.module:before,
+.module:after,
+.clearfix:before,
+.clearfix:before
+{content: ""; display: table;}
+
+
+header:after,
+fieldset .field:after,
+.container:after,
+nav ul:after,
+.list li:after,
+dl:after,
+.grid100:after,
+.row:after,
+page:after,
+.panel:after,
+.module:after,
+.clearfix:after 
+{clear: both;}
+
+/* For IE 6/7 (trigger hasLayout) */
+header,
+fieldset .field,
+.container,
+nav ul,
+.list li,
+dl,
+.grid100,
+.row,
+page,
+.panel,
+.module,
+.clearfix 
+{zoom: 1;}

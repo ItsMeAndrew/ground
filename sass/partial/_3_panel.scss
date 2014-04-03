@@ -1,0 +1,44 @@
+
+.panel {border: $border-primary;
+    $experimental-support-for-svg: true;
+    h2 {margin: 0 0 3px; font-size: 1.23em; font-weight: normal;}
+    &.type01 {background: #FAF9F7;
+        @include border-radius(2px);
+    }
+    &.type02 {background: #fff;
+        @include border-radius(4px);
+    }
+    &.type03 {background: #fff;
+        @include border-radius(10px);
+        header,.header {margin: 0; padding: 5px;
+                @include border-radius(10px 10px 0 0);
+                @include background-image(linear-gradient(top, color_stops(#FFFFFF, #FBFBFA 50%, #E1E0DD)));
+        }
+    }
+    &.type04 {background: #F9F9F9;
+        header,.header {margin: 0; padding: 5px;
+            @include background-image(linear-gradient(top, color_stops(#F0EEEB, #FEFDF8 12%, #F9F7F4 18%, #E7E3D7)));
+        }
+    }
+    &.type05 {border: solid 1px #DED9CF;
+        @include border-radius(5px);
+        @include background-image(linear-gradient(top, color_stops(#E3DAD1, #F9F4F0 50%, #E4DBD2)));
+    }
+    &.type06 {border: solid 1px #EDAB11; background: #FFFFCC;}
+    &.type07 {border: solid 1px #F07062; background: #FACAC5;}
+    &.type08 {border: transparent 1px; background-color: #DCD7CE;
+        @include border-radius(3px);
+        @include background-image(linear-gradient(top, color_stops(#F8F7F7, #FDFDF8 5%, #ffffff 8%, #B7AD9A 95%, #A89E89 98%, #BEB7AC)));
+        @include box-shadow( 0px 0px 5px 5px rgba(0,0,0, 0.3), inset 0 0 8px rgba(#ADA498, 0.5));
+    }
+    &.type09 {border: transparent 1px; background-color: #E4E0D7;
+        @include border-radius(9px);
+        @include background-image(linear-gradient(top, color_stops(#E4E0D7, #E2DED5)));
+        @include box-shadow( 0px 0px 5px 5px rgba(0,0,0, 0.3), inset 0 0 10px rgba(#000000, 0.8));
+    }
+    &.type10 {background: #FFF;
+        header,.header {margin: 0; padding: 5px;
+            @include background-image(linear-gradient(top, color_stops(#F0EEEB, #FEFDF8 12%, #F9F7F4 18%, #E7E3D7)));
+        }
+    }
+}

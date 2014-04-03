@@ -1,0 +1,61 @@
+nav {
+    ul {
+        li {
+            a {display: block; text-decoration: none;
+                &:hover {text-decoration: none;}
+            }
+        }
+    }
+    &.type01 {font-family: $font01;
+        ul {
+            li {float: left;
+                a {margin: 0 5px 0 0; padding: 2px 0; width: 105px; text-align: center; font-size: 1.08em; color: #555; 
+                    @include border-radius(2px);
+                    @include box-shadow(0px -2px 4px 1px rgba(155,145,129, 0.4));
+                    &:hover {padding: 3px 0 1px; color: #4f4648; background: #F9F8F6;
+/*                        $experimental-support-for-svg: true;*/
+                        @include background-image(linear-gradient(top, #FCFBFB, #F6F5F3));
+                    }
+                    &.current {color: #4f4648; background: #F9F8F6;}
+                }
+            }
+        }
+    }
+    &.type02 {padding: 0 0 3px 0; border: solid 1px #CCCCCC;
+        ul {
+            li {
+                &.seperator {border-top: solid 1px #CCCCCC;}
+                a {display: block; padding: 5px 10px; color: #444; text-decoration: none; font-size: 12px;
+                    &:hover {padding: 5px 8px; color: #333333; background-color: #EEEEEE; font-size: 13px; font-weight: bold;}
+                    &.active {background-color: #C6C6FF;}
+                    .icon, .icon-med {margin: -2px 5px 0 0;}
+                }
+            }
+        }
+    }
+    &.type03 {
+        ul {
+            li {@include inline-block; border-left: solid 1px #aaa; padding: 0 5px; line-height: 1.05em; font-size: 0.91em; color: #666;
+                &:first-child {border: 0; padding-left: 0;}
+                a {color: #666;
+                    &:hover {color: #333;}
+                }
+            }
+        }
+    }
+    &.type04 {}
+    &.type05 {}
+    
+    //custom 
+    &.reportoptionsMenu{display:none; position: absolute; width:200px; right:4px; top:30px; background-color:#FFFFFF; z-index:2003;}
+}
+
+.menu_body li a.menuArrowLeft{
+    padding-left:15px;
+    background: url(../images/eroadicons/menuArrowLeft.png) no-repeat 0 2px;
+}
+.menu_body li a.menuArrowLeft:hover{color:#333333; background-color:#EEEEEE; font-size:13px; text-decoration:none; font-weight:bold; display:block;}
+.menu_body li a.activeMenuItem {
+    background-color:#C6C6FF !important;
+    font-size:13px; text-decoration:none; font-weight:bold;
+}

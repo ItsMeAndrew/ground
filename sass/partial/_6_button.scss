@@ -1,0 +1,97 @@
+
+// #Buttons
+// ================================================== //
+
+$color-stops: color-stops( rgba(255,255,255,.2), rgba(0,0,0, 0.2));
+$hover-stops: color-stops( rgba(255,255,255,.3), rgba(0,0,0, 0.3));
+$active-stops: color-stops( rgba(255,255,255, 0.35), rgba(10,10,10, 0.4));
+
+// =================================================== //
+
+
+
+a.button, 
+.button,
+button, 
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"] {float: left; margin: 0 5px 5px 0; cursor: pointer; color: $body-color; text-decoration: none; font-family: $font02; font-weight: normal; border: solid 1px #CCC; background: #C4DFF1;
+	@include inline-block;
+	@include border-radius(7px);
+	@include background-image(linear-gradient(top, color_stops(#EEF1F5 5%, #DADEE8 7%, #F4F5F8 20%, #FFFFFF 40%, #ffffff 50%, #FFFFFF 60%, #FCFCFC 80%, #C1C7D2 95%, #A5ADBD)));
+    	&:hover {text-decoration: none; border-color: #666;}
+
+    
+    &.small {font-size: 0.89em;}
+    &.large {font-size: 1.3333em; font-weight: bold;}
+    &.fullWidth {display: block; float: none; padding-left: 0 !important; padding-right: 0 !important; width: 100%; text-align: center;}
+    &.noText {text-indent: -9999em;}
+    
+    /* Normal primary button */
+    &.primary { border-color: #72BAED; color: #000;
+    	@include background-image(linear-gradient(top, color_stops(#8FD2FF, #ADDEFB 20%, #EDF9FF 40%, #ffffff 50%, #EDF9FF 60%, #ADDEFB 80%, #8FD2FF)));
+        &:hover { color: $body-color; border-color: #0066FF;}
+    }
+    &.feature {border-color: #B39C8A; @include background-image(linear-gradient(top, color_stops(#E0DBD1, #CFC8BA)));
+    	&:hover {@include background-image(linear-gradient(top, color_stops(#BAB19F, #B9AF9D)));}
+    }
+
+    &.flattext {text-decoration: underline; background: none; border: none;
+    	&:hover {text-decoration: none;}
+    }
+
+    &.transparent {text-decoration: none; border: solid 1px transparent; background: transparent;
+    	&:hover {background-color: #fff; border: solid 1px #B3B3B3;
+    		@include border-radius(5px);
+    	}
+    }
+    &.type05 {text-decoration: none; border: solid 1px #7E7F8A; @include background-image(linear-gradient(top, color_stops(#EDE8E1, #EFECE8)));
+        @include border-radius(5px);
+        @include box-shadow( 2px 2px 1px 2px rgba(0,0,0, 0.2));
+    	&:hover {}
+    }
+    
+  
+
+    span.icon-small {position: relative; top: -2px; left: -4px;
+    	&.floatRight {left: auto;}
+    }
+    span.icon-custom {position: relative; top: -2px; left: -4px;}
+	
+	/* Special buttons */
+    &.dropdownButton {}
+    &.textlink {}
+    &.iconButton {padding: 4px 5px 2px;
+        .icon {left: auto;
+            &.floatRight {right: auto;}
+        }
+    }
+}
+
+a.button {padding: 4px 10px 2px; height: 18px;
+	&.small {padding: 0px 5px 1px; height: 16px;}
+	&.large {padding: 15px 30px; height: 17px;}
+}
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"] {padding: 3px 10px; height: 26px;
+	&.small {padding: 1px 5px; height: 19px;}
+	&.large {padding: 1px 30px; height: 49px;}
+}
+
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+
+/* ie hacks */
+/*.ie {
+	input[type="submit"],	
+	input[type="reset"],
+	input[type="button"] {padding: 3px;}
+}*/
