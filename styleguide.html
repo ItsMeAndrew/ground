@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>styleguide</title>
-	<link rel="stylesheet" href="stylesheets/app.css">
+	<link rel="stylesheet" href="css/base.css">
 	<script src="javascripts/vendor/custom.modernizr.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 	<style>
@@ -17,7 +17,14 @@
 		h2.styleguide {font-size: 3em; padding: 20px; color: #fff; background: #e90101;}
 	</style>
 </head>
-<body>
+<body class="">
+	<header class="header-page">
+		<div class="container">
+			<h1 class="logowrapper">
+				<a class="logo companyname" alt="Companyname" href="/">Companyname</a>
+			</h1>
+		</div>
+	</header>
 	<nav class="styleguide">
 		<a href="#Typography">Typography</a>
 		<a href="#Form">Form</a>
@@ -91,31 +98,5 @@
 		</form>
 		<!-- end: Form -->
 	</div>
-
-	<!-- scripts -->
-	<script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  <script src="js/foundation/foundation.js"></script>
-  <script src="js/foundation/foundation.alerts.js"></script>
-  <script src="js/foundation/foundation.clearing.js"></script>
-  <script src="js/foundation/foundation.cookie.js"></script>
-  <script src="js/foundation/foundation.dropdown.js"></script>
-  <script src="js/foundation/foundation.forms.js"></script>e
-  <script src="js/foundation/foundation.joyride.js"></script>
-  <script src="js/foundation/foundation.magellan.js"></script>
-  <script src="js/foundation/foundation.orbit.js"></script>
-  <script src="js/foundation/foundation.placeholder.js"></script>
-  <script src="js/foundation/foundation.reveal.js"></script>
-  <script src="js/foundation/foundation.section.js"></script>
-  <script src="js/foundation/foundation.tooltips.js"></script>
-  <script src="js/foundation/foundation.topbar.js"></script>
-  <script src="js/foundation/foundation.interchange.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-
 </body>
 </html>

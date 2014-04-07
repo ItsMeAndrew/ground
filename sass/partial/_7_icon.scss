@@ -1,25 +1,33 @@
 /* sprites - arrows */
-@import "arrows/*.png";
+/*@import "arrows/*.png";*/
+
 /* $arrows-layout:diagonal;*/
-$arrows-spacing:100px;
-@include all-arrows-sprites;
+/*$arrows-spacing:100px;
+@include all-arrows-sprites;*/
 
 /* sprites - icons */
-$icons-spacing:300px;
+/*$icons-spacing:300px;
+*/
 
 /* $icons-layout: diagonal;*/
-@import "icons/*.png";
+/*@import "icons/*.png";
 @include all-icons-sprites;
+*/
 
 /* logos */
-@import "logos/*.png";
-@include all-logos-sprites;
+@import "logo/*.png";
+$logos-spacing: 100px;
+@include all-logo-sprites;
+
+.logo {
+    &.companyname {@include icon-button(235px, 34px); @include logo-sprite("companyname");}
+}
 
 
-.icon-small {@include icon-button(20px, 20px);
+/*.icon-small {@include icon-button(20px, 20px);*/
     /* arrows */
 
-    &.arrow-up-brown {@include arrows-sprite("up-brown");}
+    /*&.arrow-up-brown {@include arrows-sprite("up-brown");}
     &.arrow-down-brown {@include arrows-sprite("down-brown");}
     
     &.arrow-up-blue-01 {@include arrows-sprite("up-blue-01");
@@ -58,10 +66,10 @@ $icons-spacing:300px;
     &.arrow-left-blue-03 {@include arrows-sprite("left-blue-03");}
     
     &.arrow-down-black {@include arrows-sprite("down-black");}
-    &.arrow-left-black {@include arrows-sprite("left-black");}
+    &.arrow-left-black {@include arrows-sprite("left-black");}*/
 
     /* icons */
-    &.icon-setting-black {@include icons-sprite("setting-black");}
+    /*&.icon-setting-black {@include icons-sprite("setting-black");}
     &.icon-tool-blue {@include icons-sprite("tool-blue");}
     &.icon-cross-black-01 {@include icons-sprite("cross-black-01");}
     &.icon-cross-red-01 {@include icons-sprite("cross-red-01");}
@@ -71,9 +79,9 @@ $icons-spacing:300px;
     
     
     
-}
+}*/
 
-.icon-med {@include icon-button(25px, 25px);}
+/*.icon-med {@include icon-button(25px, 25px);}
 .icon-pdf-med-01 {@include icons-sprite("pdf-med-01");}
 .icon-xls-med-01 {@include icons-sprite("xls-med-01");}
 .icon-mail-med-01 {@include icons-sprite("mail-med-01");}
@@ -103,4 +111,4 @@ $icons-spacing:300px;
 .driver-driving {@include icons-sprite("person-driving");}
 .driver-working-notdriving {@include icons-sprite("person-workingNotDriving");}
 .driver-resting {@include icons-sprite("person-resting");}
-.driver-finished-work {@include icons-sprite("person-finishedWork");}
+.driver-finished-work {@include icons-sprite("person-finishedWork");}*/

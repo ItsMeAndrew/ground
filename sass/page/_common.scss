@@ -1,4 +1,33 @@
 body {
+	.container {@include container; width: 90%; min-width: 950px;}
+
+	form {
+		@include blueprint-form;
+		
+	}
+
+	// Page layout can be done using mixins applied to your semantic classes and IDs:
+	&.two-col {
+		.container {
+			@include container;
+		}
+		header, footer {
+			@include column($blueprint-grid-columns);
+		}
+		sidebar {
+			// One third of the grid columns, rounding down. With 24 cols, this is 8.
+			$sidebar-columns: floor($blueprint-grid-columns / 3);
+			@include column($sidebar-columns);
+		}
+		.content {
+			// Two thirds of the grid columns, rounding up.
+			// With 24 cols, this is 16.
+			$content-columns: ceil(2 * $blueprint-grid-columns / 3);
+			// true means it's the last column in the row
+			@include column($content-columns, true);
+		}
+	}
+
 	/* layout */
 
 	/* header */
@@ -11,7 +40,6 @@ body {
 		&.footer-page {}
 	}
 
-	/* common element {
-		
-	}
+	/* common element */ 
+
 }

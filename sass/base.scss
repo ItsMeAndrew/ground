@@ -1,5 +1,6 @@
 // compass core components
 //@import "compass/reset";
+@import "blueprint/reset";
 @import "compass/css3";
 @import "compass/utilities/sprites";
 @import "compass/utilities/general/clearfix";
@@ -10,8 +11,16 @@
 @import "partial/mixins";
 
 //custom clearfix 
-/*@import "partial/clearfix";*/
-@import "partial/customClearFix";
+@import "partial/clearfix";
+
+//blueprint
+@import "partial/blueprintSettings";
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+// Import the non-default scaffolding module.
+@import "blueprint/scaffolding";
+
+
 
 // Plugins - SyntexHighlighter plugin
 @import "plugin/syntexHighlighter/shCore";
@@ -44,11 +53,16 @@
 // pages
 @import "page/common";
 
+// ================================================== //
+// others
+// ================================================== //
+
 // ie hack
 @import "partial/ie";
 
 
-
+// print meida
+@import "partial/print";
 
 
 

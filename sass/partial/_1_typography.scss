@@ -1,11 +1,11 @@
 //1. typography
 
-body {font: 75%/1.5em $font02; font-weight: 400; color: $body-color; 
+body {font: 75%/1.5em $font-body; font-weight: 400; color: $body-color; 
 	/*-webkit-font-smoothing: antialiased;*/ 
 	/* Fix for webkit rendering */ -webkit-text-size-adjust: 100%;
 }
 
-h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6 {display: block; font-family: $font01;}
+h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6 {display: block; font-family: $font-heading;}
 
 h1 {margin: 1em 0; font-size: 3em; line-height: 1.21em; font-weight: bold;}
 h2 {margin: 1em 0; font-size: 2.5em; line-height: 1.21em; font-weight: bold;}
@@ -27,4 +27,4 @@ b {font-weight: bold;}
 p {margin: 0 0 1em;}
 
 /* form element typography */
-input, textarea, select, label {font-family: $font02;}
+input, textarea, select, label {font-family: $font-body;}

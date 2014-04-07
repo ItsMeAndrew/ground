@@ -15,7 +15,7 @@ a.button,
 button, 
 input[type="submit"], 
 input[type="reset"], 
-input[type="button"] {float: left; margin: 0 5px 5px 0; cursor: pointer; color: $body-color; text-decoration: none; font-family: $font02; font-weight: normal; border: solid 1px #CCC; background: #C4DFF1;
+input[type="button"] {float: left; margin: 0 5px 5px 0; cursor: pointer; color: $body-color; text-decoration: none; font-family: $font-body; font-weight: normal; border: solid 1px #CCC; background: #C4DFF1;
 	@include inline-block;
 	@include border-radius(7px);
 	@include background-image(linear-gradient(top, color_stops(#EEF1F5 5%, #DADEE8 7%, #F4F5F8 20%, #FFFFFF 40%, #ffffff 50%, #FFFFFF 60%, #FCFCFC 80%, #C1C7D2 95%, #A5ADBD)));
