@@ -17,14 +17,18 @@
 @import "partial/blueprintSettings";
 // Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
+@import "blueprint/liquid";
+@include blueprint-typography;
+
+
 // Import the non-default scaffolding module.
-@import "blueprint/scaffolding";
+/*@import "blueprint/scaffolding";*/
 
 
 
 // Plugins - SyntexHighlighter plugin
-@import "plugin/syntexHighlighter/shCore";
-@import "plugin/syntexHighlighter/shThemeMidnight";
+/*@import "plugin/syntexHighlighter/shCore";
+@import "plugin/syntexHighlighter/shThemeMidnight";*/
 
 //custom tools
 @import "partial/tools";
@@ -58,12 +62,12 @@
 // ================================================== //
 
 // ie hack
-@import "partial/ie";
-
+/*@import "partial/ie";
+*/
 
 // print meida
-@import "partial/print";
-
+/*@import "partial/print";
+*/
 
 
 

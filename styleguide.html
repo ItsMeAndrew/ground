@@ -18,21 +18,27 @@
 	</style>
 </head>
 <body class="">
-	<header class="header-page">
-		<div class="container">
-			<h1 class="logowrapper">
-				<a class="logo companyname" alt="Companyname" href="/">Companyname</a>
-			</h1>
-		</div>
-	</header>
-	<nav class="styleguide">
-		<a href="#Typography">Typography</a>
-		<a href="#Form">Form</a>
-	</nav>
-	<h1 class="styleguide">default theme</h1>
-		<!-- start: Typography -->
-		<div class="row">
-			<div class="large-12 columns">
+	<div class="container">
+		<header class="header-page">
+			<div class="cols four-cols">
+				<div class="col col-1">
+					<h1 class="logo companyname">
+						<a alt="Companyname" href="/">Companyname</a>
+					</h1>
+				</div>
+				<div class="col col-2">
+					<nav class="styleguide">
+						<a href="#Typography">Typography</a>
+						<a href="#Form">Form</a>
+					</nav>
+				</div>
+				<div class="col col-3">&nbsp;</div>
+				<div class="col col-4 last">&nbsp;</div>
+		</header>
+		<div class="main">
+			<!-- start: Typography -->
+			<h1 class="styleguide">default theme</h1>
+			<div class="">
 				<h2 class="styleguide" id="Typography">Typography</h2>
 				<h1>Heading 1</h1>
 				<p>Lorem ipsum dolor sit amet, <strong>strong</strong> adipiscing elit. <a href="#">hyperlink</a> sapien lacinia, <em>Emphasized</em> massa a, posuere neque. Nullam ullamcorper purus vitae metus mollis, quis <sup>superscript</sup> risus sollicitudin. 
@@ -53,50 +59,47 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta sapien lacinia, tempor massa a, posuere neque. Nullam ullamcorper purus vitae metus mollis, quis molestie risus sollicitudin. 
 				Aliquam consequat blandit urna vel bibendum. Morbi et mattis mauris, eget egestas massa. Ut nec ligula vehicula, auctor erat eu, ultricies arcu. Aenean interdum lectus quis ipsum ultricies tristique. Etiam tellus justo, vestibulum id ultrices non, consequat et dolor. Nam feugiat, massa et imperdiet auctor, odio massa blandit dui, et ullamcorper arcu risus vitae libero. Duis at molestie lacus. Donec iaculis, massa at blandit fringilla, turpis nulla malesuada leo, non bibendum purus dolor mollis odio.</p>
 			</div>
-		</div>
-		<!-- end: Typography -->
-		<!-- start: Form -->
+			<!-- end: Typography -->
+			<!-- start: Form -->
 		<form class="custom">
-			<div class="row">
-				<div class="large-12 columns">
-					<h2 class="styleguide" id="Form">Form</h2>
-					<div class="large-12 columns">
-							<label for ="">input text</label>
-							<input type="text" />
-					</div>
-					<div class="large-12 columns">
-						<label for ="">input password</label>
-						<input type="password" />
-					</div>
-					<div class="large-12 columns">
-						<label for ="">input textarea</label>
-						<textarea></textarea>
-					</div>
-					<div class="large-12 columns">
-						<label for ="">input select</label>
-						<select class="medium">
-							<option>option</option>
-							<option>option</option>
-							<option>option</option>
-							<option>option</option>
-							<option>option</option>
-						</select>
-					</div>
-					<div class="large-12 columns">
-						<input type="radio" name="sex" value="male"><label>Radio 01</label>
-						<input type="radio" name="sex" value="female"><label>Radio 02</label>
-						<input type="radio" name="sex" value="male"><label>Radio 03</label>
-						<input type="radio" name="sex" value="female"><label>Radio 04</label>
-					</div>
-					<div class="large-12 columns">
-						<input type="checkbox" /><label>checkbox</label>
-						<input type="checkbox" /><label>checkbox</label>
-						<input type="checkbox" /><label>checkbox</label>
-					</div>
-				</div>
+			<h2 class="styleguide" id="Form">Form</h2>
+			<div class="large-12 columns">
+				<label for ="">input text</label>
+				<input type="text" />
+			</div>
+			<div class="large-12 columns">
+				<label for ="">input password</label>
+				<input type="password" />
+			</div>
+			<div class="large-12 columns">
+				<label for ="">input textarea</label>
+				<textarea></textarea>
+			</div>
+			<div class="large-12 columns">
+				<label for ="">input select</label>
+				<select class="medium">
+					<option>option</option>
+					<option>option</option>
+					<option>option</option>
+					<option>option</option>
+					<option>option</option>
+				</select>
+			</div>
+			<div class="large-12 columns">
+				<input type="radio" name="sex" value="male"><label>Radio 01</label>
+				<input type="radio" name="sex" value="female"><label>Radio 02</label>
+				<input type="radio" name="sex" value="male"><label>Radio 03</label>
+				<input type="radio" name="sex" value="female"><label>Radio 04</label>
+			</div>
+			<div class="large-12 columns">
+				<input type="checkbox" /><label>checkbox</label>
+				<input type="checkbox" /><label>checkbox</label>
+				<input type="checkbox" /><label>checkbox</label>
 			</div>
 		</form>
 		<!-- end: Form -->
+		</div>
+		<footer></footer>
 	</div>
 </body>
 </html>
